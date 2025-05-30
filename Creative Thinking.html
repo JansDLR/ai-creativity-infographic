@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Creative Thinking in the AI-Powered Workforce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light Slate Blue-Gray */
+            color: #073B4C; /* Midnight Green Eagle Green for base text */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem; /* 24px */
+            margin-bottom: 1.5rem; /* 24px */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 550px; /* Max width for charts */
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px; /* Base height for charts */
+            max-height: 400px; /* Max height */
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .chart-container {
+                height: 380px;
+            }
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+        h1 { color: #118AB2; } /* Blue NCS */
+        h2 { color: #06D6A0; } /* Caribbean Green */
+        h3 { color: #118AB2; } /* Blue NCS */
+        .accent-text-1 { color: #FF6B6B; } /* Poppy Red */
+        .accent-text-2 { color: #FFD166; } /* Sunglow Yellow */
+        .highlight-stat {
+            font-size: 3rem; /* 48px */
+            font-weight: 900;
+            line-height: 1;
+            color: #FF6B6B; /* Poppy Red */
+        }
+        .flow-step {
+            background-color: #e0f7fa; /* Light cyan */
+            border-left: 4px solid #118AB2; /* Blue NCS */
+        }
+        .arrow {
+            color: #118AB2; /* Blue NCS */
+            font-weight: bold;
+        }
+        .icon-placeholder { /* Using Unicode characters as placeholders */
+            font-size: 1.5rem; /* 24px */
+            margin-right: 0.5rem; /* 8px */
+            color: #06D6A0; /* Caribbean Green */
+        }
+        .benefit-item, .strategy-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem; /* 12px */
+        }
+        .sticky-nav {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #FF6B6B; /* Poppy Red */
+        }
+        .active-nav-link {
+            color: #FF6B6B; /* Poppy Red */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav id="navbar" class="sticky-nav p-4 hidden md:block">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="#hero" class="nav-link">Intro</a>
+            <a href="#mandate" class="nav-link">Mandate</a>
+            <a href="#human-edge" class="nav-link">Human Edge</a>
+            <a href="#assessment" class="nav-link">Assessment</a>
+            <a href="#hiring" class="nav-link">Hiring</a>
+            <a href="#cultivation-individual" class="nav-link">Individual</a>
+            <a href="#cultivation-org" class="nav-link">Organizational</a>
+            <a href="#future" class="nav-link">Future</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <section id="hero" class="text-center py-12 md:py-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">The Strategic Imperative of <span class="accent-text-1">Creative Thinking</span></h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-8">In the AI-Powered Workforce: Trends & Strategies for the Future</p>
+            <div class="card">
+                <p class="text-lg text-gray-600 mb-2">The World Economic Forum identifies</p>
+                <p class="highlight-stat">Creative Thinking</p>
+                <p class="text-2xl text-gray-700 mt-2">as the <span class="font-bold accent-text-2">#1 Skill</span> needed globally in the next five years.</p>
+            </div>
+             <p class="mt-8 text-lg text-gray-700">This infographic explores why human ingenuity is more critical than ever, how it's assessed and cultivated, and its role in forging a collaborative future with AI, based on deep research insights.</p>
+        </section>
+
+        <section id="mandate" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8">The New Creative Mandate</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4">Redefining Creativity in the AI Era</h3>
+                <p class="text-gray-700 mb-4">In today's AI-driven landscape, creative thinking transcends artistic pursuits. It's the ability to <strong class="accent-text-1">"create and innovate something that has value."</strong> This encompasses a comprehensive, end-to-end process:</p>
+                <div class="space-y-4 md:space-y-0 md:flex md:space-x-2 items-center justify-center text-center">
+                    <div class="flow-step p-3 rounded-md flex-1 min-w-[150px]">Brainstorming & Ideation</div>
+                    <div class="arrow hidden md:block text-2xl mx-2">&#10140;</div>
+                    <div class="flow-step p-3 rounded-md flex-1 min-w-[150px]">Evaluation & Selection</div>
+                    <div class="arrow hidden md:block text-2xl mx-2">&#10140;</div>
+                    <div class="flow-step p-3 rounded-md flex-1 min-w-[150px]">Design & Iteration</div>
+                    <div class="arrow hidden md:block text-2xl mx-2">&#10140;</div>
+                    <div class="flow-step p-3 rounded-md flex-1 min-w-[150px]">Feedback Integration</div>
+                    <div class="arrow hidden md:block text-2xl mx-2">&#10140;</div>
+                    <div class="flow-step p-3 rounded-md flex-1 min-w-[150px]">Collaboration & Sharing</div>
+                </div>
+                <p class="text-gray-700 mt-6">This expanded view is critical as AI automates routine tasks, shifting human focus to higher-order thinking and strategic innovation.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4">Why Creative Thinking is Crucial Now</h3>
+                 <p class="text-gray-700 mb-4">The imperative for creative thinking in the age of AI is driven by its power to unlock numerous organizational and individual benefits. It is the cornerstone of resilience and progress in a rapidly evolving world.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="benefit-item"><span class="icon-placeholder">&#128200;</span><span><strong class="text-lg">Adaptability:</strong> Navigate and thrive amidst constant change and disruption.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#128640;</span><span><strong class="text-lg">Competitive Edge:</strong> Leverage AI uniquely to differentiate products and services.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#128161;</span><span><strong class="text-lg">Innovation Acceleration:</strong> Drive novel solutions and enhanced customer experiences.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#129504;</span><span><strong class="text-lg">Enhanced Problem-Solving:</strong> Tackle complex challenges with unconventional approaches.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#127919;</span><span><strong class="text-lg">Focus on Higher-Value Tasks:</strong> Shift human effort to strategic, conceptual work as AI handles routine tasks.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#129309;</span><span><strong class="text-lg">Improved Collaboration:</strong> Foster teamwork and leverage diverse skills for robust outcomes.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#127793;</span><span><strong class="text-lg">Personal & Professional Growth:</strong> Cultivate critical thinking, adaptability, and resilience.</span></div>
+                    <div class="benefit-item"><span class="icon-placeholder">&#9881;</span><span><strong class="text-lg">Increased Productivity & Growth:</strong> Overcome stagnation and discover new efficiencies.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="human-edge" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8">The Human Edge: AI & Human Creativity</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4">A Symbiotic Partnership</h3>
+                <p class="text-gray-700 mb-6">AI excels at processing data and automating tasks, but human creativity provides the vision, empathy, and originality essential for true innovation. The future lies in effectively combining these strengths.</p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3 accent-text-2">AI Capabilities &#129302;</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Generating text, images, code based on patterns</li>
+                            <li>Automating routine and repetitive tasks</li>
+                            <li>Analyzing vast datasets to identify trends</li>
+                            <li>Optimizing processes for efficiency</li>
+                            <li>Streamlining content creation workflows</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3 accent-text-1">Unique Human Creativity &#128170;</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Original thought, insight, and conceptualization</li>
+                            <li>Empathy and understanding human needs/values</li>
+                            <li>Strategic, visionary thinking beyond existing data</li>
+                            <li>Ethical judgment and human-centered design</li>
+                            <li>Making unconventional connections</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-gray-700 mt-6">Humans guide AI, infusing technology with purpose and ensuring innovations are not just novel but also meaningful and aligned with broader societal values. This partnership is key to navigating technological challenges with human-centered solutions.</p>
+            </div>
+        </section>
+
+        <section id="assessment" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Identifying Creative Potential</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4">The Four "P"s of Creativity Assessment</h3>
+                    <p class="text-gray-700 mb-4">A comprehensive understanding of creativity involves evaluating multiple facets:</p>
+                    <ul class="space-y-3">
+                        <li class="benefit-item"><span class="icon-placeholder">&#129504;</span><strong>Process:</strong> The cognitive operations and thinking styles involved in generating ideas.</li>
+                        <li class="benefit-item"><span class="icon-placeholder">&#128100;</span><strong>Person:</strong> Personality traits and characteristics associated with creative individuals (e.g., openness, risk-taking).</li>
+                        <li class="benefit-item"><span class="icon-placeholder">&#127912;</span><strong>Product:</strong> The novelty, usefulness, and overall quality of the creative output or solution.</li>
+                        <li class="benefit-item"><span class="icon-placeholder">&#127748;</span><strong>Press (Environment):</strong> The contextual factors and environmental conditions that foster or inhibit creativity.</li>
+                    </ul>
+                    <p class="text-gray-700 mt-4">Assessing all four provides a holistic view of an individual's or team's creative capabilities.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4">Key Assessment Tool Categories</h3>
+                    <p class="text-gray-700 mb-4">Various methods are used to measure different aspects of creative thinking. No single tool captures everything, so a multi-method approach is often best.</p>
+                    <div class="chart-container">
+                        <canvas id="assessmentToolsChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-2">Distribution of Assessment Focus</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hiring" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Building a Creative Workforce: Hiring Strategies</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4">Integrating Creativity into Talent Acquisition</h3>
+                <p class="text-gray-700 mb-6">Companies are increasingly prioritizing creative thinking in hiring. This involves moving beyond subjective impressions to more structured and demonstrable evaluations of creative potential.</p>
+                <div class="space-y-6">
+                    <div class="p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h4 class="text-xl font-semibold mb-2 accent-text-1">1. Signaling & Sourcing</h4>
+                        <p class="text-gray-600">Explicitly list "creative thinking" in job descriptions. Emphasize responsibilities requiring innovation. Adopt skills-first hiring to broaden the talent pool.</p>
+                    </div>
+                    <div class="p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h4 class="text-xl font-semibold mb-2 accent-text-2">2. Behavioral & Open-Ended Interviews</h4>
+                        <p class="text-gray-600">Ask questions that probe past creative problem-solving, idea generation processes, and adaptability. (e.g., "Describe a time you solved a problem unconventionally.")</p>
+                    </div>
+                    <div class="p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h4 class="text-xl font-semibold mb-2" style="color: #06D6A0;">3. Practical Exercises & Real-Time Assessments</h4>
+                        <p class="text-gray-600">Incorporate tasks or scenarios requiring creative solutions relevant to the role (e.g., design challenges, case studies, problem-solving simulations).</p>
+                    </div>
+                    <div class="p-4 rounded-lg border border-gray-200 shadow-sm">
+                        <h4 class="text-xl font-semibold mb-2" style="color: #118AB2;">4. Gamified & Personality Assessments</h4>
+                        <p class="text-gray-600">Utilize interactive, game-like tasks to measure creativity, problem-solving, and adaptability dynamically. Personality inventories can identify traits correlated with creativity.</p>
+                    </div>
+                </div>
+                 <p class="text-gray-700 mt-6">The goal is to build a robust process that identifies candidates who not only claim creativity but can demonstrate it through their thinking and actions.</p>
+            </div>
+        </section>
+
+        <section id="cultivation-individual" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Unlocking Your Creative Power</h2>
+            <div class="card mb-8">
+                <h3 class="text-2xl font-semibold mb-4">Nature vs. Nurture: Is Creativity Innate or Learned?</h3>
+                <div class="flex items-center justify-center space-x-4">
+                     <span class="text-5xl">&#127793;</span> <p class="text-gray-700 text-lg">Contemporary understanding suggests creativity is a <strong class="accent-text-1">blend of genetic predispositions and environmental influences</strong>. While some may have natural inclinations, creative potential is <strong class="accent-text-2">universally present and highly cultivable</strong> through deliberate practice and supportive environments.</p>
+                     <span class="text-5xl">&#129504;</span> </div>
+                <p class="text-gray-700 mt-4 text-center">This empowers everyone to develop their creative capacities.</p>
+            </div>
+
+            <div class="card">
+                 <h3 class="text-2xl font-semibold mb-6 text-center">Strategies for Individual Creative Development</h3>
+                 <p class="text-gray-700 mb-6 text-center">Cultivating personal creativity is an ongoing journey. Here are key strategies:</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#128269;</span><span><strong>Embrace Exploration:</strong> Cultivate curiosity, ask questions, explore new ideas.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#10067;</span><span><strong>Challenge Assumptions:</strong> Question norms, seek alternative perspectives.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#127914;</span><span><strong>Imaginative Play & Solitude:</strong> Allow for mind-wandering, daydreaming, and playful experimentation.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#129520;</span><span><strong>Practice Divergent/Convergent Thinking:</strong> Generate many ideas, then refine and select the best.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#128172;</span><span><strong>Seek & Integrate Feedback:</strong> View criticism as a tool for growth and refinement.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#128218;</span><span><strong>Continuous Learning:</strong> Engage in workshops, read, take courses to expand horizons.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#128257;</span><span><strong>Break Routine:</strong> Try new activities, hobbies, and approaches to stimulate fresh thinking.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#9200;</span><span><strong>Manage Time & Energy:</strong> Dedicate focused blocks for deep creative work.</span></div>
+                    <div class="strategy-item p-4 bg-gray-50 rounded-lg"><span class="icon-placeholder">&#128736;</span><span><strong>Overcome Barriers:</strong> Address fear of failure and rigid thinking.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultivation-org" class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Cultivating an Innovation Ecosystem</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Fostering Organizational Creativity (The "Press")</h3>
+                <p class="text-gray-700 mb-6 text-center">Organizations play a critical role in creating environments where creativity thrives. This involves intentional design of both physical and psychological spaces.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#128737;</span><span><strong>Psychological Safety:</strong> Encourage experimentation, view failure as learning.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#128279;</span><span><strong>Cross-Functional Collaboration:</strong> Bring diverse minds and departments together.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#127891;</span><span><strong>Learning & Development:</strong> Invest in creative thinking and new technology training.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#128296;</span><span><strong>Creative Freedom & Autonomy:</strong> Empower employees to explore ideas without micromanagement.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#127794;</span><span><strong>Stimulating Workspaces:</strong> Design spaces with natural light, plants, comfort, and areas for brainstorming.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#128165;</span><span><strong>Support Bold Ideas:</strong> Actively encourage and resource unconventional thinking.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#128119;</span><span><strong>Leadership Support:</strong> Leaders model creativity, champion initiatives, and provide backing.</span></div>
+                    <div class="strategy-item p-4 bg-sky-50 rounded-lg"><span class="icon-placeholder" style="color:#118AB2;">&#128300;</span><span><strong>Pre-Solving & Anticipation:</strong> Proactively develop solutions for future challenges.</span></div>
+                </div>
+                <p class="text-gray-700 mt-6 text-center">Creating such an ecosystem makes innovation a sustainable and integral part of the organizational culture.</p>
+            </div>
+        </section>
+
+        <section id="future" class="py-12 text-center">
+            <h2 class="text-3xl font-bold mb-6">Charting a Creative Future with AI</h2>
+            <div class="card">
+                <p class="text-xl text-gray-700 mb-4">In the AI-driven landscape, human creativity is the <strong class="accent-text-1">"defining factor"</strong> distinguishing thriving organizations. It's the key to leveraging AI as an enabler of human potential, not a replacement for intellect.</p>
+                <p class="text-lg text-gray-600 mb-4">The future hinges on a <strong class="accent-text-2">symbiotic human-AI partnership</strong>, where human ingenuity guides technology towards meaningful, human-centered goals. This collaboration is the ultimate competitive advantage.</p>
+                <p class="text-lg text-gray-600">As technology evolves, a commitment to <strong style="color:#06D6A0;">continuous learning, adaptability, and the deliberate cultivation of creative thinking</strong> at all levels will ensure resilience, sustained innovation, and human-centric progress in the new era of work.</p>
+                 <div class="mt-8">
+                    <span class="text-5xl">&#128170;</span> <span class="text-3xl mx-2">+</span> <span class="text-5xl">&#129302;</span> <span class="text-3xl mx-2">=</span> <span class="text-5xl">&#127752;</span>
+                    <p class="text-sm text-gray-500 mt-1">Human Ingenuity + AI Capability = Future Success</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-8 bg-gray-800 text-gray-300">
+        <p>&copy; <span id="currentYear"></span> Modern Workforce Insights. Infographic based on deep research into Creative Thinking in the AI Era.</p>
+        <p class="text-xs mt-1">All visual elements (charts, diagrams) are rendered using HTML/CSS and Chart.js (Canvas). No SVG or Mermaid JS used.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function wrapLabel(label, maxWidth = 16) {
+            if (typeof label !== 'string' || label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth && currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            if (currentLine.trim().length > 0) {
+                lines.push(currentLine.trim());
+            }
+            return lines.length > 0 ? lines : [label];
+        }
+
+        const assessmentToolsCtx = document.getElementById('assessmentToolsChart').getContext('2d');
+        new Chart(assessmentToolsCtx, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    wrapLabel('Divergent Thinking (TTCT, AUT, DAT)'),
+                    wrapLabel('Convergent Thinking (RAT)'),
+                    wrapLabel('Product Assessment (CAT)'),
+                    wrapLabel('Gamified & Digital Assessments'),
+                    wrapLabel('Personality Inventories')
+                ],
+                datasets: [{
+                    label: 'Focus of Assessment Tools',
+                    data: [35, 20, 25, 15, 5],
+                    backgroundColor: [
+                        '#FF6B6B', // Poppy Red
+                        '#FFD166', // Sunglow Yellow
+                        '#06D6A0', // Caribbean Green
+                        '#118AB2', // Blue NCS
+                        '#748cab'  // A lighter shade of Midnight Green for less emphasis
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                             boxWidth: 15,
+                             padding: 15,
+                             font: {
+                                size: 11
+                             },
+                             generateLabels: function(chart) {
+                                const data = chart.data;
+                                if (data.labels.length && data.datasets.length) {
+                                    return data.labels.map(function(label, i) {
+                                        const meta = chart.getDatasetMeta(0);
+                                        const style = meta.controller.getStyle(i);
+                                        const labelText = Array.isArray(label) ? label.join(' ') : label;
+                                        return {
+                                            text: labelText,
+                                            fillStyle: style.backgroundColor,
+                                            strokeStyle: style.borderColor,
+                                            lineWidth: style.borderWidth,
+                                            hidden: isNaN(data.datasets[0].data[i]) || meta.data[i].hidden,
+                                            index: i
+                                        };
+                                    });
+                                }
+                                return [];
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                }
+                                return label;
+                            }
+                        }
+                    },
+                    title: {
+                        display: false,
+                        text: 'Distribution of Assessment Tool Focus'
+                    }
+                }
+            }
+        });
+
+        // Sticky Nav active state
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('#navbar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) { // Adjusted offset
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav-link');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active-nav-link');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
